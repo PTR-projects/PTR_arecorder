@@ -1,0 +1,359 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arek
+LIBS:rakieta-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title "Arecorder"
+Date "4 jan 2015"
+Rev "1.1"
+Comp "Arkadiusz Paliński"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 5650 1950 0    60   ~ 0
+zasilanie karty SD
+$Comp
+L VDD #PWR086
+U 1 1 5055B5DD
+P 4250 2950
+F 0 "#PWR086" H 4250 3050 30  0001 C CNN
+F 1 "VDD" H 4250 3060 30  0000 C CNN
+F 2 "" H 4250 2950 60  0001 C CNN
+F 3 "" H 4250 2950 60  0001 C CNN
+	1    4250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P7
+U 1 1 5041E526
+P 3450 3450
+F 0 "P7" V 3400 3450 40  0000 C CNN
+F 1 "POWER" V 3500 3450 40  0000 C CNN
+F 2 "arek:conn_goldpin_2" H 3450 3450 60  0001 C CNN
+F 3 "" H 3450 3450 60  0001 C CNN
+	1    3450 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C15
+U 1 1 4F6CB2B3
+P 6150 2350
+F 0 "C15" H 6200 2450 50  0000 L CNN
+F 1 "10u" H 6200 2250 50  0000 L CNN
+F 2 "arek:SM0805" H 6150 2350 60  0001 C CNN
+F 3 "" H 6150 2350 60  0001 C CNN
+	1    6150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 4F6CB2AF
+P 6150 3100
+F 0 "C17" H 6200 3200 50  0000 L CNN
+F 1 "10u" H 6200 3000 50  0000 L CNN
+F 2 "arek:SM0805" H 6150 3100 60  0001 C CNN
+F 3 "" H 6150 3100 60  0001 C CNN
+	1    6150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR087
+U 1 1 4F5E2D69
+P 4250 4100
+F 0 "#PWR087" H 4250 4100 30  0001 C CNN
+F 1 "GND" H 4250 4030 30  0001 C CNN
+F 2 "" H 4250 4100 60  0001 C CNN
+F 3 "" H 4250 4100 60  0001 C CNN
+	1    4250 4100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4350 3750 2    50   Output ~ 0
+POWER_GOOD
+$Comp
+L R R22
+U 1 1 4F5E2D68
+P 4250 3950
+F 0 "R22" V 4330 3950 50  0000 C CNN
+F 1 "47k/1%" V 4150 3950 50  0000 C CNN
+F 2 "arek:SM0603" H 4250 3950 60  0001 C CNN
+F 3 "" H 4250 3950 60  0001 C CNN
+	1    4250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R21
+U 1 1 4F5E2D67
+P 4250 3550
+F 0 "R21" V 4330 3550 50  0000 C CNN
+F 1 "100k/1%" V 4150 3550 50  0000 C CNN
+F 2 "arek:SM0603" H 4250 3550 60  0001 C CNN
+F 3 "" H 4250 3550 60  0001 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 3V3 #PWR088
+U 1 1 4F5D1AC8
+P 6150 2200
+F 0 "#PWR088" H 6150 2300 40  0001 C CNN
+F 1 "3V3" H 6150 2325 40  0000 C CNN
+F 2 "" H 6150 2200 60  0001 C CNN
+F 3 "" H 6150 2200 60  0001 C CNN
+	1    6150 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR089
+U 1 1 4F5D1A94
+P 4950 2400
+F 0 "#PWR089" H 4950 2400 30  0001 C CNN
+F 1 "GND" H 4950 2330 30  0001 C CNN
+F 2 "" H 4950 2400 60  0001 C CNN
+F 3 "" H 4950 2400 60  0001 C CNN
+	1    4950 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR090
+U 1 1 4F5D1A88
+P 4950 3150
+F 0 "#PWR090" H 4950 3150 30  0001 C CNN
+F 1 "GND" H 4950 3080 30  0001 C CNN
+F 2 "" H 4950 3150 60  0001 C CNN
+F 3 "" H 4950 3150 60  0001 C CNN
+	1    4950 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L TPS76301 U9
+U 1 1 4F5D1A4A
+P 5450 2300
+F 0 "U9" H 5700 2500 60  0000 C CNN
+F 1 "TPS76333" H 5350 2500 60  0000 C CNN
+F 2 "arek:SOT23-5" H 5450 2300 60  0001 C CNN
+F 3 "" H 5450 2300 60  0001 C CNN
+	1    5450 2300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5950 2400
+$Comp
+L GND #PWR091
+U 1 1 4F5D1A47
+P 6150 2500
+F 0 "#PWR091" H 6150 2500 30  0001 C CNN
+F 1 "GND" H 6150 2430 30  0001 C CNN
+F 2 "" H 6150 2500 60  0001 C CNN
+F 3 "" H 6150 2500 60  0001 C CNN
+	1    6150 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR092
+U 1 1 4EE329E1
+P 6150 3250
+F 0 "#PWR092" H 6150 3250 30  0001 C CNN
+F 1 "GND" H 6150 3180 30  0001 C CNN
+F 2 "" H 6150 3250 60  0001 C CNN
+F 3 "" H 6150 3250 60  0001 C CNN
+	1    6150 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR093
+U 1 1 4EB4E789
+P 3100 3550
+F 0 "#PWR093" H 3100 3550 30  0001 C CNN
+F 1 "GND" H 3100 3480 30  0001 C CNN
+F 2 "" H 3100 3550 60  0001 C CNN
+F 3 "" H 3100 3550 60  0001 C CNN
+	1    3100 3550
+	0    1    1    0   
+$EndComp
+NoConn ~ 5950 3150
+$Comp
+L TPS76301 U7
+U 1 1 4DE13027
+P 5450 3050
+F 0 "U7" H 5700 3250 60  0000 C CNN
+F 1 "TPS76333" H 5350 3250 60  0000 C CNN
+F 2 "arek:SOT23-5" H 5450 3050 60  0001 C CNN
+F 3 "" H 5450 3050 60  0001 C CNN
+	1    5450 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3,3V #PWR094
+U 1 1 4D822F47
+P 6150 2950
+F 0 "#PWR094" H 6150 2910 30  0001 C CNN
+F 1 "+3,3V" H 6150 3060 30  0000 C CNN
+F 2 "" H 6150 2950 60  0001 C CNN
+F 3 "" H 6150 2950 60  0001 C CNN
+	1    6150 2950
+	1    0    0    -1  
+$EndComp
+Text Notes 5500 1200 0    60   ~ 0
+Potrzeba kondensatora o pojemności co najmniej 1000 uF,\naby zasilanie nie spadło poniżej 3 V przy poborze\nprądu na poziomie 30 mA i braku zasilania przez 10 ms\n(w najgorszym możliwym przypadku).
+Text Notes 2650 3150 0    60   ~ 0
+złącze zasilania -\ndwie dziury + dwa placki
+Text Notes 2600 3800 0    60   ~ 0
+input voltage 3,7 - 10 V
+$Comp
+L VDD #PWR095
+U 1 1 51C48E5D
+P 3100 3350
+F 0 "#PWR095" H 3100 3450 30  0001 C CNN
+F 1 "VDD" H 3100 3460 30  0000 C CNN
+F 2 "" H 3100 3350 60  0001 C CNN
+F 3 "" H 3100 3350 60  0001 C CNN
+	1    3100 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L DIODESCH D6
+U 1 1 51C4AB6A
+P 4450 2950
+F 0 "D6" H 4450 3050 40  0000 C CNN
+F 1 "LL103C" H 4450 2850 40  0000 C CNN
+F 2 "arek:SM1206_DIODE" H 4450 2950 60  0001 C CNN
+F 3 "~" H 4450 2950 60  0000 C CNN
+	1    4450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C16
+U 1 1 51C4C21B
+P 4650 3150
+F 0 "C16" H 4700 3250 50  0000 L CNN
+F 1 "1mF/10V" H 4700 3050 50  0000 L CNN
+F 2 "arek:SMD_G_cap" H 4650 3150 60  0001 C CNN
+F 3 "~" H 4650 3150 60  0000 C CNN
+	1    4650 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR096
+U 1 1 51C4C235
+P 4650 3300
+F 0 "#PWR096" H 4650 3300 30  0001 C CNN
+F 1 "GND" H 4650 3230 30  0001 C CNN
+F 2 "" H 4650 3300 60  0001 C CNN
+F 3 "" H 4650 3300 60  0001 C CNN
+	1    4650 3300
+	1    0    0    -1  
+$EndComp
+Text Notes 4450 4100 0    60   ~ 0
+power good - max 3,3 V na wyjściu\nprzy max 10 V zasilania
+Text Notes 5250 3400 2    50   ~ 0
+EEEFK1A102P
+$Comp
+L V_USB #PWR097
+U 1 1 56EF88D2
+P 4050 2650
+F 0 "#PWR097" H 4050 2500 50  0001 C CNN
+F 1 "V_USB" H 4050 2800 50  0000 C CNN
+F 2 "" H 4050 2650 60  0000 C CNN
+F 3 "" H 4050 2650 60  0000 C CNN
+	1    4050 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 4950 2200
+Connection ~ 4250 3750
+Connection ~ 4950 2950
+Wire Wire Line
+	4350 3750 4250 3750
+Connection ~ 6150 2950
+Wire Wire Line
+	4950 2950 4950 3050
+Wire Wire Line
+	4950 2300 4950 2200
+Connection ~ 6150 2200
+Wire Wire Line
+	5950 2950 6150 2950
+Wire Wire Line
+	5950 2200 6150 2200
+Connection ~ 4650 2950
+Wire Wire Line
+	4250 3700 4250 3800
+Wire Wire Line
+	4950 2200 4650 2200
+Connection ~ 4650 2650
+Wire Wire Line
+	4650 2950 4950 2950
+Wire Wire Line
+	4250 2950 4250 3400
+Connection ~ 4250 2950
+Wire Wire Line
+	4650 2200 4650 3000
+$Comp
+L D D8
+U 1 1 56F04CA6
+P 4500 2650
+F 0 "D8" H 4500 2750 50  0000 C CNN
+F 1 "1N4148" H 4500 2550 50  0000 C CNN
+F 2 "arek:SM0805_DIODE" H 4500 2650 60  0001 C CNN
+F 3 "" H 4500 2650 60  0000 C CNN
+	1    4500 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R24
+U 1 1 56F25259
+P 4200 2650
+F 0 "R24" V 4280 2650 50  0000 C CNN
+F 1 "10R" V 4200 2650 50  0000 C CNN
+F 2 "arek:SM0603" H 4200 2650 60  0001 C CNN
+F 3 "" H 4200 2650 60  0001 C CNN
+	1    4200 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L +BATT #PWR098
+U 1 1 56F6AF25
+P 4650 2200
+F 0 "#PWR098" H 4650 2050 50  0001 C CNN
+F 1 "+BATT" H 4650 2340 50  0000 C CNN
+F 2 "" H 4650 2200 60  0000 C CNN
+F 3 "" H 4650 2200 60  0000 C CNN
+	1    4650 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4650 2200
+Text Notes 2250 2400 0    60   ~ 0
+Prąd pobierany z USB po włączeniu zasilania\n(5 V - 0,7 V)/10 ohm = 430 mA
+$EndSCHEMATC
