@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arecorder Meas Parser", "Arecorder Meas Parser\Arecorder Meas Parser.csproj", "{B9FBB8C4-7F8E-4362-8622-E803FCDA635A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9FBB8C4-7F8E-4362-8622-E803FCDA635A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FBB8C4-7F8E-4362-8622-E803FCDA635A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FBB8C4-7F8E-4362-8622-E803FCDA635A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FBB8C4-7F8E-4362-8622-E803FCDA635A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52CDA9F3-2ED5-4AF7-8A86-2D15B5112FD7}
+	EndGlobalSection
+EndGlobal
